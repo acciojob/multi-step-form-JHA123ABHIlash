@@ -4,7 +4,7 @@ export default function Step({step,formdata,handleChange,handleNext,handlePrev,h
   
         if(step==1){
            return (
-            <div>
+            <div id='step1'>
                 <label htmlFor='fname'>First Name:</label>
                 <input type='text' id='fname' name='fname' value={formdata.fname} onChange={handleChange}/>
                  <label htmlFor='lname'>Last Name:</label>
@@ -14,7 +14,7 @@ export default function Step({step,formdata,handleChange,handleNext,handlePrev,h
            ) 
         }else if(step==2){
             return (
-            <div>
+            <div id='step2'>
                 <label htmlFor='brand'>Brand:</label>
                 <input type='text' id='brand' name='brand' value={formdata.brand} onChange={handleChange}/>
                  <label htmlFor='model'>Model:</label>
@@ -25,7 +25,7 @@ export default function Step({step,formdata,handleChange,handleNext,handlePrev,h
            ) 
         }else if(step==3){
             return (
-            <div>
+            <div id='step3'>
                 <label htmlFor='card_info'>Credit Card No:</label>
                 <input type='text' id='card_info'name='card_info' value={formdata.card_info} onChange={handleChange} minLength={12}/>
                  <label htmlFor='expiry_date'>Card Exp:</label>
