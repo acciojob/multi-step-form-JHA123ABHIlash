@@ -5,10 +5,10 @@ export default function Step({step,formdata,handleChange,handleNext,handlePrev,h
         if(step==1){
            return (
             <div id='step1'>
-                <label htmlFor='fname'>First Name:</label>
-                <input type='text' id='fname' name='fname' value={formdata.fname} onChange={handleChange}/>
-                 <label htmlFor='lname'>Last Name:</label>
-                <input type='text' id='lname' name='lname' value={formdata.lname} onChange={handleChange}/>
+                <label htmlFor='first_name'>First Name:</label>
+                <input type='text' id='first_name' name='fname' value={formdata.fname} onChange={handleChange}/>
+                 <label htmlFor='last_name'>Last Name:</label>
+                <input type='text' id='last_name' name='lname' value={formdata.lname} onChange={handleChange}/>
                 <button onClick={handleNext}>Next</button>
             </div>
            ) 
